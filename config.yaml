@@ -1,0 +1,30 @@
+logger:
+    console:
+        level: INFO
+    file:
+        level: DEBUG
+        path: "debug.log"
+
+cognite:
+    host: ${COGNITE_BASE_URL}
+    project: ${COGNITE_PROJECT}
+
+    idp-authentication:
+        token-url: ${COGNITE_TOKEN_URL}
+        client-id: ${COGNITE_CLIENT_ID}
+        secret: ${COGNITE_CLIENT_SECRET}
+        scopes:
+            - ${COGNITE_BASE_URL}/.default
+
+    extraction-pipeline:
+        external-id: ${EXTRACTION_PIPELINE_EXT_ID}
+
+sfdc:
+    username: ${SFDC_USERNAME}
+    password: ${SFDC_PASSWORD}
+    security_token: ${SFDC_SECURITY_TOKEN}
+    query_string: ${SFDC_QUERY_STRING}
+
+destination:
+    database: ${DESTINATION_DB}
+    table: ${DESTINATION_TABLE}

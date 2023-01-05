@@ -1,0 +1,14 @@
+COGNITE_BASE_URL="https://api.cognitedata.com"
+COGNITE_PROJECT=
+COGNITE_CLIENT_ID=
+COGNITE_TOKEN_URL="https://login.microsoftonline.com/{TENANT_ID}/oauth2/v2.0/token"
+COGNITE_CLIENT_SECRET=
+EXTRACTION_PIPELINE_EXT_ID=
+
+SFDC_USERNAME="you@your_company.sandbox"
+SFDC_PASSWORD=
+SFDC_SECURITY_TOKEN=
+SFDC_QUERY_STRING="SELECT Id, Email, Name, AccountId, Phone, Title FROM Contact"
+
+DESTINATION_DB=
+DESTINATION_TABLE="contacts"
